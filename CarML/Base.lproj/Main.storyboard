@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9Qb-hf-RBV">
+                                <rect key="frame" x="33" y="72" width="348" height="433"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="oDH-pX-7HY">
+                                <rect key="frame" x="20" y="558" width="374" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="5jN-5r-U7n"/>
+                                </constraints>
+                                <string key="text">Esta app es una prueba del Core AML, simplemente es una prueba de simulacion, los precios indicados no son definitovs ni relevantes</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSR-RK-hs0">
+                                <rect key="frame" x="148" y="788" width="118" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="sOr-mK-Ebh"/>
+                                </constraints>
+                                <state key="normal" title="Empezar la venta">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="maL-ZB-ZvC" kind="show" id="Tkh-TZ-TmC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="MainColor"/>
+                        <constraints>
+                            <constraint firstItem="9Qb-hf-RBV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="070-DJ-BzB"/>
+                            <constraint firstItem="oDH-pX-7HY" firstAttribute="top" secondItem="9Qb-hf-RBV" secondAttribute="bottom" constant="53" id="1nb-b4-tfM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dSR-RK-hs0" secondAttribute="bottom" constant="37" id="PjU-ga-yPt"/>
+                            <constraint firstItem="dSR-RK-hs0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QhU-PO-YPf"/>
+                            <constraint firstItem="9Qb-hf-RBV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Yl7-cg-gUb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Qb-hf-RBV" secondAttribute="trailing" constant="33" id="mpt-un-0vh"/>
+                            <constraint firstItem="9Qb-hf-RBV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="qZl-tI-EQs"/>
+                            <constraint firstItem="dSR-RK-hs0" firstAttribute="top" secondItem="oDH-pX-7HY" secondAttribute="bottom" constant="169" id="tah-sw-uqH"/>
+                            <constraint firstItem="oDH-pX-7HY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tq2-jA-zRN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qAy-Zx-92a">
+            <objects>
+                <viewController id="maL-ZB-ZvC" customClass="ViewController" customModule="CarML" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pPd-31-gHb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="dga-5y-bHG">
+                                <rect key="frame" x="20" y="101" width="295" height="181"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modelo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cj0-1X-1dg">
+                                        <rect key="frame" x="0.0" y="0.0" width="57.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yAY-tS-UuN">
+                                        <rect key="frame" x="0.0" y="20.5" width="116" height="29"/>
+                                        <segments>
+                                            <segment title="207"/>
+                                            <segment title="307"/>
+                                            <segment title="407"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="calculateValue" destination="maL-ZB-ZvC" eventType="valueChanged" id="JYi-h7-itq"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extras" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0B-73-dNY">
+                                        <rect key="frame" x="0.0" y="48.5" width="48" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8R-FJ-jO2">
+                                        <rect key="frame" x="0.0" y="69" width="51" height="31"/>
+                                        <color key="onTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <connections>
+                                            <action selector="calculateValue" destination="maL-ZB-ZvC" eventType="valueChanged" id="GQj-71-xyl"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qr4-an-45B">
+                                        <rect key="frame" x="0.0" y="100" width="53" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="1Xi-zI-lkU">
+                                        <rect key="frame" x="0.0" y="120.5" width="295" height="29"/>
+                                        <segments>
+                                            <segment title="Pesimo"/>
+                                            <segment title="Regular"/>
+                                            <segment title="Bueno"/>
+                                            <segment title="Excelente"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="calculateValue" destination="maL-ZB-ZvC" eventType="valueChanged" id="uMM-RM-8kB"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999€" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsJ-cg-1f9">
+                                        <rect key="frame" x="0.0" y="148.5" width="99.5" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="MainColor"/>
+                        <constraints>
+                            <constraint firstItem="dga-5y-bHG" firstAttribute="leading" secondItem="reF-j2-ro6" secondAttribute="leading" constant="20" id="1T7-xT-X3E"/>
+                            <constraint firstItem="dga-5y-bHG" firstAttribute="top" secondItem="reF-j2-ro6" secondAttribute="top" constant="57" id="vnk-4q-wJ4"/>
+                            <constraint firstItem="reF-j2-ro6" firstAttribute="trailing" secondItem="dga-5y-bHG" secondAttribute="trailing" constant="99" id="yTF-n8-LFK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="reF-j2-ro6"/>
+                    </view>
+                    <connections>
+                        <outlet property="estadoSegmentedControl" destination="1Xi-zI-lkU" id="e3u-EP-KIx"/>
+                        <outlet property="extrasSwitch" destination="q8R-FJ-jO2" id="Uyl-xx-pV4"/>
+                        <outlet property="mainStackView" destination="dga-5y-bHG" id="0TY-VW-XVw"/>
+                        <outlet property="modelSegmentedControl" destination="yAY-tS-UuN" id="BNZ-dZ-K1h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Sb-Q1-vxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892.75362318840587" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="348" height="433"/>
+        <namedColor name="MainColor">
+            <color red="0.2627450980392157" green="1" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
